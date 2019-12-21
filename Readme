@@ -1,1 +1,22 @@
 This is my first git repo
+
+1.使用文件创建用户名和密码
+  文件创建在用户主目录下
+
+touch ./git-credentials
+vim ./git-credentials
+https://YanLdt:datouwudi233@github.com
+
+2.添加git config --global credential.helper store
+
+git config --global credential.helper 'cache --timeout=3600'
+
+执行后，用户主目录下的 ./gitconfig文件会多一项[credential] helper = true
+
+重新git push 就不需要用户密码了
+
+
+git remote add origin {url}
+Https连接(http://github.com/YanLdt/gitfile.git) 需要密码
+ssh连接(git@github.com:YanLdt/gitfile.git) 不需要密码
+
