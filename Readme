@@ -16,7 +16,11 @@ git config --global credential.helper 'cache --timeout=3600'
 重新git push 就不需要用户密码了
 
 
-git remote add origin {url}
+git remote add origin url
+git remote set-url origin url
 Https连接(http://github.com/YanLdt/gitfile.git) 需要密码
 ssh连接(git@github.com:YanLdt/gitfile.git) 不需要密码
+
+
+
 
